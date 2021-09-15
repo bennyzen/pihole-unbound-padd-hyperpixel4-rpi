@@ -12,7 +12,6 @@ docker-compose stack with PiHole, Unbound, PADD with Hyperpixel4 display for Ras
 - Add these lines to your `~/.bashrc`
 ```bash
 # Run PADD
-# If we’re on the PiTFT screen (ssh is xterm)
 if [ "$TERM" == "linux" ] ; then
   while :
   do
