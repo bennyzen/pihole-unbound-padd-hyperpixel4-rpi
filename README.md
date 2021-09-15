@@ -19,3 +19,9 @@ fi
 - Pull this repo
 - Edit values in `docker-compose.yml`
 - Start the stack with `docker-compose up -d`
+
+## Test DNS performance
+After you have successfully setup everything and started the stack, make sure you test the performance of the DNS by doing:
+```
+./dnsperftest/dnstest.sh
+```
