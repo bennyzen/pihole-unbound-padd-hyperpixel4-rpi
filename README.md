@@ -1,6 +1,10 @@
 # pihole-unbound-padd-hyperpixel4-rpi
 docker-compose stack with PiHole, Unbound, PADD with Hyperpixel4 display for RaspberryPi
 
+![image](https://user-images.githubusercontent.com/13304/133509651-1ac29500-c368-4ffa-978d-27c9160ee314.png)
+
+## Setup
+
 - Install Raspbian lite
 - Setup docker and docker-compose
 - Install hyperpixel4 display
