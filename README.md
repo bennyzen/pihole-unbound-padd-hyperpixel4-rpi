@@ -17,4 +17,4 @@ if [ "$TERM" == "linux" ] ; then
 fi
 ```
 - Pull this repo
-- 
+- Start the stack with `docker-compose up -d`
