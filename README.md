@@ -17,5 +17,5 @@ if [ "$TERM" == "linux" ] ; then
 fi
 ```
 - Pull this repo
-- Edit values in `.env` file
+- Edit values in `docker-compose.yml`
 - Start the stack with `docker-compose up -d`
