@@ -6,6 +6,7 @@ docker-compose stack with PiHole, Unbound, PADD with Hyperpixel4 display for Ras
 ## Setup
 
 - Install Raspbian lite
+- Make sure you provide a *fixed IP* for this device
 - Setup docker and docker-compose
 - Install hyperpixel4 display
 - Add these lines to your `~/.bashrc`
