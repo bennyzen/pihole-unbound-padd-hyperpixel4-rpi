@@ -24,6 +24,9 @@ fi
 - Pull this repo
 - Edit values in `docker-compose.yml`
 - Start the stack with `docker-compose up -d`
+- In PiHole under Settings > DNS set your Upstream DNS Server to `127.0.0.1#5335`
+![image](https://user-images.githubusercontent.com/13304/133510101-f7c438c9-c24e-4657-992b-a0f7bc963cdc.png)
+
 
 ## Test DNS performance
 After you have successfully setup everything and started the stack, make sure you test the performance of the DNS by doing:
