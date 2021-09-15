@@ -1,5 +1,5 @@
 # pihole-unbound-padd-hyperpixel4-rpi
-docker-compose stack with [PiHole](https://github.com/pi-hole/pi-hole), [Unbound](https://github.com/NLnetLabs/unbound), [PADD](https://github.com/pi-hole/PADD) with Hyperpixel4 display for RaspberryPi
+docker-compose stack with [PiHole](https://github.com/pi-hole/pi-hole), [Unbound](https://github.com/NLnetLabs/unbound), [PADD](https://github.com/pi-hole/PADD) with [Hyperpixel4](https://github.com/pimoroni/hyperpixel4) display for RaspberryPi
 
 ![image](https://user-images.githubusercontent.com/13304/133509651-1ac29500-c368-4ffa-978d-27c9160ee314.png)
 
