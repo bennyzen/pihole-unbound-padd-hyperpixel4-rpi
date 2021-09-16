@@ -8,24 +8,24 @@ services:
     # disable all ports when enabling network_mode=host
     network_mode: host
 #    ports:
-#      - "53:53/tcp"
-#      - "53:53/udp"
-#      - "67:67/udp"
-#      - "80:80/tcp"
+#      - 53:53/tcp
+#      - 53:53/udp
+#      - 67:67/udp
+#      - 80:80/tcp
     environment:
-      TZ: 'Europe/Zurich'
-      WEBPASSWORD: '4153passwort'
+      TZ: Europe/Zurich
+      WEBPASSWORD: dsfasdfsdafsdfasfdasdfasdfsadfasdfsdf
     # Volumes store your data between container upgrades
     volumes:
-      - './pihole/etc-pihole/:/etc/pihole/'
-      - './pihole/etc-dnsmasq.d/:/etc/dnsmasq.d/'
-      - './pihole/var-log/pihole.log:/var/log/pihole.log'
+      - ./pihole/etc-pihole/:/etc/pihole/
+      - ./pihole/etc-dnsmasq.d/:/etc/dnsmasq.d/
+      - ./pihole/var-log/pihole.log:/var/log/pihole.log
       # These are needed for PADD
-      - './padd:/padd'
-      - '/proc/loadavg:/proc/loadavg:ro'
-      - '/proc/meminfo:/proc/meminfo:ro'
-      - '/sys/class/thermal:/sys/class/thermal:ro'
-      - '/sys/devices/system/cpu:/sys/devices/system/cpu:ro'
+      - ./padd:/padd
+      - /proc/loadavg:/proc/loadavg:ro
+      - /proc/meminfo:/proc/meminfo:ro
+      - /sys/class/thermal:/sys/class/thermal:ro
+      - /sys/devices/system/cpu:/sys/devices/system/cpu:ro
     # Recommended but not required (DHCP needs NET_ADMIN)
     #   https://github.com/pi-hole/docker-pi-hole#note-on-capabilities
     cap_add:
