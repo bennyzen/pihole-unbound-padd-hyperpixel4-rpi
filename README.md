@@ -5,11 +5,11 @@ docker-compose stack with [PiHole](https://github.com/pi-hole/pi-hole), [Unbound
 
 ## Setup
 
-- Install Raspbian lite
+- Install Raspbian lite 32bit (64bit does not yet support hyperpixel. see https://github.com/pimoroni/hyperpixel4/issues/117)
 - Make sure you provide a *fixed IP* for this device
 - Setup docker and docker-compose
-- Install hyperpixel4 display
-- Add these lines to your `~/.bashrc`
+- Install hyperpixel4 display (use https://github.com/pimoroni/hyperpixel4)
+- Add these lines to your `~/.bashrc` 
 ```bash
 # Run PADD
 if [ "$TERM" == "linux" ] ; then
