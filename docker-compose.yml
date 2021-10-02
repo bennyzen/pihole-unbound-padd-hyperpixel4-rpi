@@ -19,7 +19,7 @@ services:
     volumes:
       - ./pihole/etc-pihole/:/etc/pihole/
       - ./pihole/etc-dnsmasq.d/:/etc/dnsmasq.d/
-      - ./pihole/var-log/pihole.log:/var/log/pihole.log
+      #- ./pihole/var-log/pihole.log:/var/log/pihole.log
       # These are needed for PADD
       - ./padd:/padd
       - /proc/loadavg:/proc/loadavg:ro
