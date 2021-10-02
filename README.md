@@ -8,6 +8,7 @@ docker-compose stack with [PiHole](https://github.com/pi-hole/pi-hole), [Unbound
 - Install Raspbian lite 32bit (64bit does not yet support hyperpixel. see https://github.com/pimoroni/hyperpixel4/issues/117)
 - Make sure you provide a *fixed IP* for this device
 - Setup docker and docker-compose
+- Install bc and dig with `sudo apt install bc dnsutils`
 - Install hyperpixel4 display (use https://github.com/pimoroni/hyperpixel4)
 - Add these lines to your `~/.bashrc` 
 ```bash
