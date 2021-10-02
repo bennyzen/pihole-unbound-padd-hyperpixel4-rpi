@@ -37,6 +37,9 @@ sudo dpkg-reconfigure console-setup
 ```
 Now hit Enter two times and then on the font-selection screen select a font that is big enough for your eyes. PADD will adapt the amount of information that is shown automatically. The bigger the font, the lesser info is shown.
 
+## Set as DNS
+Depending on your network setup, you can now instruct your router to tell all clients to use PiHole as DNS. Or you can just configure the clients manually by entering its IP as DNS. 
+
 ## Test DNS performance
 After you have successfully setup everything and started the stack, make sure you test the performance of the DNS by doing:
 ```
