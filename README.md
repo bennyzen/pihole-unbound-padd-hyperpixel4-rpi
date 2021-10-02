@@ -30,6 +30,13 @@ fi
 ## Enable auto-login
 To directly display your PiHole stats after each reboot, use `raspi-config` under `System Options -> Boot / Auto Login` and enable `Console Autologin`. A reboot is required.
 
+## Adjust the font-size to fill the screen
+The default terminal font was too small to fill the entire screen. You can change the font-size doing:
+```bash
+sudo dpkg-reconfigure console-setup
+```
+Now hit Enter two times and then on the font-selection screen select a font that is big enough for your eyes. PADD will adapt the amount of information that is shown automatically. The bigger the font, the lesser info is shown.
+
 ## Test DNS performance
 After you have successfully setup everything and started the stack, make sure you test the performance of the DNS by doing:
 ```
