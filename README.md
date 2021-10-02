@@ -27,6 +27,8 @@ fi
 - In PiHole under Settings > DNS set your Upstream DNS Server to `127.0.0.1#5335`
 ![image](https://user-images.githubusercontent.com/13304/133510101-f7c438c9-c24e-4657-992b-a0f7bc963cdc.png)
 
+## Enable auto-login
+To directly display your PiHole stats after each reboot, use `raspi-config` under `System Options -> Boot / Auto Login` and enable `Console Autologin`. A reboot is required.
 
 ## Test DNS performance
 After you have successfully setup everything and started the stack, make sure you test the performance of the DNS by doing:
