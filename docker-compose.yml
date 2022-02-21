@@ -19,9 +19,9 @@ services:
     volumes:
       - ./pihole/etc-pihole/:/etc/pihole/
       - ./pihole/etc-dnsmasq.d/:/etc/dnsmasq.d/
-      - ./pihole/var-log/pihole.log:/var/log/pihole.log
+      #- ./pihole/var-log/pihole.log:/var/log/pihole.log
       # These are needed for PADD
-      - ./padd:/padd
+      - ./PADD:/padd
       - /proc/loadavg:/proc/loadavg:ro
       - /proc/meminfo:/proc/meminfo:ro
       - /sys/class/thermal:/sys/class/thermal:ro
@@ -33,8 +33,10 @@ services:
 
   unbound:
     container_name: unbound
-    image: mvance/unbound-rpi:latest
+    image: mvance/unbound-rpi
     restart: unless-stopped
+    environment:
+        - TZ=Europe/Zurich
     # disable all ports when enabling network_mode=host
     network_mode: host
 #    ports:
