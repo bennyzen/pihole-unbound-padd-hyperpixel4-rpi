@@ -15,6 +15,7 @@ services:
     environment:
       TZ: Europe/Zurich
       WEBPASSWORD: dsfasdfsdafsdfasfdasdfasdfsadfasdfsdf
+      DNSMASQ_USER: root
     # Volumes store your data between container upgrades
     volumes:
       - ./pihole/etc-pihole/:/etc/pihole/
