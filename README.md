@@ -5,9 +5,9 @@ docker-compose stack with [PiHole](https://github.com/pi-hole/pi-hole), [Unbound
 
 ## Setup
 
-- Install Raspbian lite 32bit (64bit does not yet support hyperpixel. see https://github.com/pimoroni/hyperpixel4/issues/117)
+- Install Raspbian lite 64bit
 - Make sure you provide a *fixed IP* for this device
-- Setup docker and docker-compose
+- Setup docker
 - Install bc and dig with `sudo apt install bc dnsutils`
 - Install hyperpixel4 display (use https://github.com/pimoroni/hyperpixel4)
 - Add these lines to your `~/.bashrc` 
@@ -20,6 +20,10 @@ if [ "$TERM" == "linux" ] ; then
     sleep 1
   done
 fi
+```
+- Enable the overlay for hyperpixel4 by editing `/boot/config.txt` and adding this line at the very bottom
+```bash
+dtoverlay=vc4-kms-dpi-hyperpixel4
 ```
 - Pull this repo
 - Edit values in `docker-compose.yml`
